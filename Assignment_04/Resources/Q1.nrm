@@ -1,0 +1,7 @@
+CustomerID,Name,Email,Phone,TicketID,Price,DepartureDateTime,ArrivalDateTime,SeatNumber,RouteID,BusID,DepartureLocation,ArrivalLocation,Distance,BusNumber,Model,Capacity,PaymentID,Amount,PaymentMethod
+
+CustomerID -> Name,Email,Phone
+Email -> CustomerID
+Phone -> CustomerID
+TicketID -> Price,DepartureDateTime,ArrivalDateTime,SeatNumber,CustomerID,RouteID,BusID
+PaymentID -> Amount,PaymentMethod,CustomerID,TicketID
